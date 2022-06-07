@@ -14,7 +14,6 @@ export default {
     name: "App",
     data() {
       return {
-        test: 'asd',
         moveMent: '',
         player: 1,
         grids: [
