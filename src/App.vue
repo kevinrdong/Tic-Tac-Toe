@@ -72,7 +72,7 @@ export default {
         let sum = this.grids[a] + this.grids[b] + this.grids[c];
         if (sum === 3) return this.winner = 1;
         if (sum === -3) return this.winner = -1;
-        if ((sum === 1 || sum === -1) && this.grids.every((s) => s !== 0)) return this.winner = 3;
+        if ((sum !== 3 || sum !== -3) && this.grids.every((s) => s !== 0)) return this.winner = 3;
         // else return this.winner = 3;
         // if (this.grids !== [0, 0, 0, 0, 0, 0, 0, 0, 0]) return this.winner = 3;
       }
